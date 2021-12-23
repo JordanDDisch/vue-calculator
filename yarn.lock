@@ -52,13 +52,6 @@
     esutils "^2.0.2"
     js-tokens "^3.0.0"
 
-"@babel/runtime@^7.16.0":
-  version "7.16.5"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.16.5.tgz#7f3e34bf8bdbbadf03fbb7b1ea0d929569c9487a"
-  integrity sha512-TXWihFIS3Pyv5hzR7j6ihmeLkZfrXGxAr5UfSl8CHf+6q/wpiYDkUau0czckpYG8QmnCIuPpdLtuA9VmuGGyMA==
-  dependencies:
-    regenerator-runtime "^0.13.4"
-
 "@babel/template@7.0.0-beta.44":
   version "7.0.0-beta.44"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.0.0-beta.44.tgz#f8832f4fdcee5d59bf515e595fc5106c529b394f"
@@ -1753,7 +1746,7 @@ commondir@^1.0.1:
   resolved "https://registry.yarnpkg.com/commondir/-/commondir-1.0.1.tgz#ddd800da0c66127393cca5950ea968a3aaf1253b"
   integrity sha1-3dgA2gxmEnOTzKWVDqloo6rxJTs=
 
-complex.js@^2.0.15:
+complex.js@^2.0.11:
   version "2.0.15"
   resolved "https://registry.yarnpkg.com/complex.js/-/complex.js-2.0.15.tgz#7add6848b4c1d12aa9262f7df925ebe7a51a7406"
   integrity sha512-gDBvQU8IG139ZBQTSo2qvDFP+lANMGluM779csXOr6ny1NUtA3wkUnCFjlDNH/moAVfXtvClYt6G0zarFbtz5w==
@@ -2245,7 +2238,7 @@ decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2:
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
 
-decimal.js@^10.3.1:
+decimal.js@^10.2.1:
   version "10.3.1"
   resolved "https://registry.yarnpkg.com/decimal.js/-/decimal.js-10.3.1.tgz#d8c3a444a9c6774ba60ca6ad7261c3a94fd5e783"
   integrity sha512-V0pfhfr8suzyPGOx3nmq4aHqabehUZn6Ch9kyFpV79TGDTWFmHqUqXdabR7QHqxzrYolF4+tVmJhUG4OURg5dQ==
@@ -3229,7 +3222,7 @@ forwarded@0.2.0:
   resolved "https://registry.yarnpkg.com/forwarded/-/forwarded-0.2.0.tgz#2269936428aad4c15c7ebe9779a84bf0b2a81811"
   integrity sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow==
 
-fraction.js@^4.1.1:
+fraction.js@^4.0.13:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/fraction.js/-/fraction.js-4.1.2.tgz#13e420a92422b6cf244dff8690ed89401029fbe8"
   integrity sha512-o2RiJQ6DZaR/5+Si0qJUIy637QMRudSi9kU/FFzx9EZazrIdnBgpU+3sEWCxAVhH2RtxW2Oz+T4p2o8uOPVcgA==
@@ -4479,16 +4472,15 @@ math-expression-evaluator@^1.2.14:
   resolved "https://registry.yarnpkg.com/math-expression-evaluator/-/math-expression-evaluator-1.3.8.tgz#320da3b2bc1512f4f50fc3020b2b1cd5c8e9d577"
   integrity sha512-9FbRY3i6U+CbHgrdNbAUaisjWTozkm1ZfupYQJiZ87NtYHk2Zh9DvxMgp/fifxVhqTLpd5fCCLossUbpZxGeKw==
 
-mathjs@^10.0.0:
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/mathjs/-/mathjs-10.0.0.tgz#872e8e5c0d23a383760cb84e16542fad5093c6a5"
-  integrity sha512-PZcQ73mVvVG2GZXvE47q+j7P3ALVxWUM51wTmlVX3F/3IJMLNziNIqStwyIDAO64ZGB8u3iFlQwxT7DIijtNlw==
+mathjs@^8.1.0:
+  version "8.1.1"
+  resolved "https://registry.yarnpkg.com/mathjs/-/mathjs-8.1.1.tgz#89d6f2fc4a90e9038db3690678a9e1ce563e15ea"
+  integrity sha512-b3TX3EgiZObujjwb8lZnTDLUuivC2jar4ZBjmGJ4stFYCDXx/DNwx5yry5t/z65p9mvejyZel1qoeR05KtChcQ==
   dependencies:
-    "@babel/runtime" "^7.16.0"
-    complex.js "^2.0.15"
-    decimal.js "^10.3.1"
+    complex.js "^2.0.11"
+    decimal.js "^10.2.1"
     escape-latex "^1.2.0"
-    fraction.js "^4.1.1"
+    fraction.js "^4.0.13"
     javascript-natural-sort "^0.7.1"
     seedrandom "^3.0.5"
     tiny-emitter "^2.1.0"
@@ -6222,11 +6214,6 @@ regenerator-runtime@^0.11.0:
   version "0.11.1"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
   integrity sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==
-
-regenerator-runtime@^0.13.4:
-  version "0.13.9"
-  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz#8925742a98ffd90814988d7566ad30ca3b263b52"
-  integrity sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==
 
 regenerator-transform@^0.10.0:
   version "0.10.1"
