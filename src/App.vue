@@ -56,37 +56,37 @@
 </template>
 
 <script>
-import { evaluate, format } from "mathjs";
+import { evaluate, format } from 'mathjs'
 
 export default {
   name: 'App',
-  data(){
-    return{
+  data () {
+    return {
       input: '0',
-      total: "",
-      calcString: "",
-      calcResult: "",
+      total: '',
+      calcString: '',
+      calcResult: '',
       initialised: true
     }
   },
   methods: {
-    inputCalc(num) {
-      this.initialised = false;
+    inputCalc (num) {
+      this.initialised = false
       this.input =
-        this.input === "0" || (this.calcString && !isNaN(num)) ? num : `${this.input}${num}`;
-        this.calcString = ''
+        this.input === '0' || (this.calcString && !isNaN(num)) ? num : `${this.input}${num}`
+      this.calcString = ''
     },
-    clearInput() {
-      this.input = '0';
+    clearInput () {
+      this.input = '0'
       this.calcString = this.calcResult ? `Ans = ${this.calcResult}` : null
     },
-    submit() {
-      let evalString = this.input.replace(/\s/g, "").replace(/×/g, "*").replace(/÷/g, "/");
-      this.calcString = `${this.input} =`;
-      this.calcResult = format(evaluate(evalString), {precision: 14}).toString();
+    submit () {
+      let evalString = this.input.replace(/\s/g, '').replace(/×/g, '*').replace(/÷/g, '/')
+      this.calcString = `${this.input} =`
+      this.calcResult = format(evaluate(evalString), {precision: 14}).toString()
       this.input = this.calcResult
       this.initialised = true
-    },
+    }
   }
 }
 </script>
