@@ -83,7 +83,8 @@ export default {
     submit () {
       let evalString = this.input.replace(/\s/g, '').replace(/×/g, '*').replace(/÷/g, '/')
       this.calcString = `${this.input} =`
-      this.calcResult = math.format(math.evaluate(evalString), {precision: 14}).toString()
+      let result = math.evaluate(evalString)
+      this.calcResult = math.format(result, {precision: 14}).toString()
       this.input = this.calcResult
       this.initialised = true
     }
